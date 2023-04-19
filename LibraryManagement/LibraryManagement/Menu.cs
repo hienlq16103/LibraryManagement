@@ -44,12 +44,12 @@ namespace LibraryManagement {
         }
 
         private void Button_ViewBook_Click(object sender, EventArgs e) {
-            //Code to implement ...
+            OpenChildForm(new ViewBook());
             HideSubMenus();
         }
 
         private void Button_ViewCopiedBook_Click(object sender, EventArgs e) {
-            //Code to implement ...
+            OpenChildForm(new ViewCopiedBook());
             HideSubMenus();
         }
 
@@ -140,6 +140,16 @@ namespace LibraryManagement {
 
         private void pictureBox1_Click(object sender, EventArgs e) {
 
+        }
+
+        private void Button_ViewLoan_Click(object sender, EventArgs e) {
+            //Code to implement ...
+            HideSubMenus();
+        }
+
+        private void Button_ViewLoan_Click_1(object sender, EventArgs e) {
+            OpenChildForm(new ViewCurrentLoan());
+            HideSubMenus();
         }
     }
 }

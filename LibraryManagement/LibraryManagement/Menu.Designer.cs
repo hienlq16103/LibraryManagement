@@ -25,7 +25,6 @@ namespace LibraryManagement {
         /// </summary>
         private void InitializeComponent() {
             this.Panel_SideMenu = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.Panel_Loan = new System.Windows.Forms.Panel();
             this.Button_ReturnBook = new System.Windows.Forms.Button();
             this.Button_BorrowBook = new System.Windows.Forms.Button();
@@ -45,6 +44,8 @@ namespace LibraryManagement {
             this.Button_Book = new System.Windows.Forms.Button();
             this.Panel_Container = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Button_ViewLoan = new System.Windows.Forms.Button();
             this.Panel_SideMenu.SuspendLayout();
             this.Panel_Loan.SuspendLayout();
             this.Panel_Student.SuspendLayout();
@@ -70,34 +71,16 @@ namespace LibraryManagement {
             this.Panel_SideMenu.Size = new System.Drawing.Size(250, 633);
             this.Panel_SideMenu.TabIndex = 0;
             // 
-            // button1
-            // 
-            this.button1.BackgroundImage = global::LibraryManagement.Properties.Resources.exit;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 629);
-            this.button1.Name = "button1";
-            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button1.Size = new System.Drawing.Size(229, 52);
-            this.button1.TabIndex = 0;
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Panel_Loan
             // 
             this.Panel_Loan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
             this.Panel_Loan.Controls.Add(this.Button_ReturnBook);
             this.Panel_Loan.Controls.Add(this.Button_BorrowBook);
+            this.Panel_Loan.Controls.Add(this.Button_ViewLoan);
             this.Panel_Loan.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Loan.Location = new System.Drawing.Point(0, 530);
             this.Panel_Loan.Name = "Panel_Loan";
-            this.Panel_Loan.Size = new System.Drawing.Size(229, 99);
+            this.Panel_Loan.Size = new System.Drawing.Size(229, 144);
             this.Panel_Loan.TabIndex = 2;
             // 
             // Button_ReturnBook
@@ -108,7 +91,7 @@ namespace LibraryManagement {
             this.Button_ReturnBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_ReturnBook.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_ReturnBook.ForeColor = System.Drawing.Color.Snow;
-            this.Button_ReturnBook.Location = new System.Drawing.Point(0, 40);
+            this.Button_ReturnBook.Location = new System.Drawing.Point(0, 80);
             this.Button_ReturnBook.Name = "Button_ReturnBook";
             this.Button_ReturnBook.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.Button_ReturnBook.Size = new System.Drawing.Size(229, 40);
@@ -126,7 +109,7 @@ namespace LibraryManagement {
             this.Button_BorrowBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_BorrowBook.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_BorrowBook.ForeColor = System.Drawing.Color.Snow;
-            this.Button_BorrowBook.Location = new System.Drawing.Point(0, 0);
+            this.Button_BorrowBook.Location = new System.Drawing.Point(0, 40);
             this.Button_BorrowBook.Name = "Button_BorrowBook";
             this.Button_BorrowBook.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.Button_BorrowBook.Size = new System.Drawing.Size(229, 40);
@@ -403,6 +386,43 @@ namespace LibraryManagement {
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::LibraryManagement.Properties.Resources.exit;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 674);
+            this.button1.Name = "button1";
+            this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.button1.Size = new System.Drawing.Size(229, 52);
+            this.button1.TabIndex = 0;
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Button_ViewLoan
+            // 
+            this.Button_ViewLoan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_ViewLoan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Button_ViewLoan.FlatAppearance.BorderSize = 0;
+            this.Button_ViewLoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_ViewLoan.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_ViewLoan.ForeColor = System.Drawing.Color.Snow;
+            this.Button_ViewLoan.Location = new System.Drawing.Point(0, 0);
+            this.Button_ViewLoan.Name = "Button_ViewLoan";
+            this.Button_ViewLoan.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.Button_ViewLoan.Size = new System.Drawing.Size(229, 40);
+            this.Button_ViewLoan.TabIndex = 10;
+            this.Button_ViewLoan.Text = "View Current Loan";
+            this.Button_ViewLoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_ViewLoan.UseVisualStyleBackColor = true;
+            this.Button_ViewLoan.Click += new System.EventHandler(this.Button_ViewLoan_Click_1);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -449,5 +469,6 @@ namespace LibraryManagement {
         private System.Windows.Forms.Panel Panel_Container;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Button_ViewLoan;
     }
 }

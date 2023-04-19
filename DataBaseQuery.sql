@@ -121,8 +121,9 @@ INSERT INTO WrittenBy VALUES('1000005','Ngo Tuan Nghia');
 INSERT INTO WrittenBy VALUES('1000006','George Raymond Richard Martin');
 
 INSERT INTO Loan VALUES ('1000006','1','2113376','1-4-2023','8-4-2023');
+INSERT INTO Loan VALUES ('1000001','1','2110060','1-4-2023','8-4-2023');
 
-
+----------------------------------------------------------------------------
 SELECT *
 FROM LibraryManager
 
@@ -134,3 +135,21 @@ INSERT INTO LibraryManager VALUES (null,'','','','')
 SELECT * 
 FROM Student
 WHERE studentId = '2113376'
+
+SELECT L.bookId, copyNumber, title, L.studentId, S.studentName, loanDate, dueDate
+FROM Loan AS L, Book AS B, Student AS S
+WHERE L.bookId = B.bookId AND L.studentId = S.studentId
+
+SELECT B.bookId, title, authorName, publisher, yearOfPublication
+FROM Book AS B, WrittenBy AS W
+WHERE B.bookId = W.bookId AND B.bookId = '1000001'
+
+SELECT B.bookId, B.title, C.copyNumber, C.availability
+FROM Book AS B, CopiedBook AS C
+WHERE B.bookId = C.bookId
+
+UPDATE CopiedBook
+SET availability = 0
+WHERE bookId = '1000001' AND copyNumber = '1'
+
+select * FROM CopiedBook

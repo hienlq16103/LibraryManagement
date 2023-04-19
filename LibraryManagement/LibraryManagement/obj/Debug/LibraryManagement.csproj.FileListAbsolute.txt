@@ -11,3 +11,6 @@ E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManage
 E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.SignUp.resources
 E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.Menu.resources
 E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.ViewStudent.resources
+E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.ViewCurrentLoan.resources
+E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.ViewBook.resources
+E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.ViewCopiedBook.resources

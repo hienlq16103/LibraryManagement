@@ -67,6 +67,24 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViewBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewBook.Designer.cs">
+      <DependentUpon>ViewBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCopiedBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCopiedBook.Designer.cs">
+      <DependentUpon>ViewCopiedBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCurrentLoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCurrentLoan.Designer.cs">
+      <DependentUpon>ViewCurrentLoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="ViewStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +109,15 @@
     </Compile>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewBook.resx">
+      <DependentUpon>ViewBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCopiedBook.resx">
+      <DependentUpon>ViewCopiedBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCurrentLoan.resx">
+      <DependentUpon>ViewCurrentLoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ViewStudent.resx">
       <DependentUpon>ViewStudent.cs</DependentUpon>
@@ -122,6 +149,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
