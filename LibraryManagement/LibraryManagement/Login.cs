@@ -76,9 +76,10 @@ namespace LibraryManagement {
         }
 
         private void button1_Click(object sender, EventArgs e) {
-            SignUp signUp = new SignUp();
-            signUp.Show();
             this.Hide();
+            SignUp signUp = new SignUp();
+            signUp.ShowDialog();
+            this.Show();
         }
     }
 }

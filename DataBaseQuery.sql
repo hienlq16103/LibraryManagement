@@ -1,6 +1,8 @@
 CREATE DATABASE LibraryManagement
 GO
 
+USE LibraryManagement
+
 DROP DATABASE LibraryManagement
 DROP TABLE Loan
 DROP TABLE WrittenBy
@@ -120,5 +122,15 @@ INSERT INTO WrittenBy VALUES('1000006','George Raymond Richard Martin');
 
 INSERT INTO Loan VALUES ('1000006','1','2113376','1-4-2023','8-4-2023');
 
+
 SELECT *
-FROM Loan
+FROM LibraryManager
+
+DELETE FROM LibraryManager
+WHERE username = ''
+
+INSERT INTO LibraryManager VALUES (null,'','','','')
+
+SELECT * 
+FROM Student
+WHERE studentId = '2113376'

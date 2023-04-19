@@ -29,7 +29,7 @@ namespace LibraryManagement {
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Button_SignUp = new System.Windows.Forms.Button();
             this.Button_Login = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.Textbox_Password = new System.Windows.Forms.TextBox();
@@ -94,7 +94,7 @@ namespace LibraryManagement {
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.Button_SignUp);
             this.panel2.Controls.Add(this.Button_Login);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.panel3);
@@ -106,21 +106,21 @@ namespace LibraryManagement {
             this.panel2.Size = new System.Drawing.Size(450, 530);
             this.panel2.TabIndex = 1;
             // 
-            // button1
+            // Button_SignUp
             // 
-            this.button1.BackColor = System.Drawing.Color.Gainsboro;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.button1.Location = new System.Drawing.Point(204, 310);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(169, 52);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "SIGN UP";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Button_SignUp.BackColor = System.Drawing.Color.Gainsboro;
+            this.Button_SignUp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_SignUp.FlatAppearance.BorderSize = 0;
+            this.Button_SignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_SignUp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_SignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.Button_SignUp.Location = new System.Drawing.Point(204, 310);
+            this.Button_SignUp.Name = "Button_SignUp";
+            this.Button_SignUp.Size = new System.Drawing.Size(169, 52);
+            this.Button_SignUp.TabIndex = 6;
+            this.Button_SignUp.Text = "SIGN UP";
+            this.Button_SignUp.UseVisualStyleBackColor = false;
+            this.Button_SignUp.Click += new System.EventHandler(this.button1_Click);
             // 
             // Button_Login
             // 
@@ -271,7 +271,7 @@ namespace LibraryManagement {
         private System.Windows.Forms.TextBox Textbox_Username;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button Button_Login;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Button_SignUp;
     }
 }
 
