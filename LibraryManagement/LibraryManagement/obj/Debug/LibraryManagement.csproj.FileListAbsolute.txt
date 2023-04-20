@@ -14,3 +14,6 @@ E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManage
 E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.ViewCurrentLoan.resources
 E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.ViewBook.resources
 E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.ViewCopiedBook.resources
+E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.AddStudent.resources
+E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.RemoveStudent.resources
+E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.RemoveStudent1.resources

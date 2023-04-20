@@ -79,12 +79,12 @@ namespace LibraryManagement {
         }
 
         private void Button_AddStudent_Click(object sender, EventArgs e) {
-            //Code to implement ...
+            OpenChildForm(new AddStudent());
             HideSubMenus();
         }
 
         private void Button_RemoveStudent_Click(object sender, EventArgs e) {
-            //Code to implement ...
+            OpenChildForm(new RemoveStudent1());
             HideSubMenus();
         }
 
