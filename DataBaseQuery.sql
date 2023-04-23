@@ -153,3 +153,19 @@ SET availability = 0
 WHERE bookId = '1000001' AND copyNumber = '1'
 
 select * FROM CopiedBook
+
+DELETE FROM Student WHERE studentId = '-1'
+
+SELECT DISTINCT B.bookId, B.title 
+FROM Book AS B, CopiedBook AS C
+WHERE B.bookId = C.bookId
+
+SELECT copyNumber, bookId
+FROM CopiedBook
+WHERE bookId='1000001' AND availability = 1
+
+UPDATE CopiedBook
+SET availability = 0
+WHERE bookId = '1000003' AND copyNumber= '2'
+
+SELECT * FROM CopiedBook

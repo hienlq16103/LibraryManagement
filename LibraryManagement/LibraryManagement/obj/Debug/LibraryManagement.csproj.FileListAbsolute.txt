@@ -17,3 +17,4 @@ E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManage
 E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.AddStudent.resources
 E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.RemoveStudent.resources
 E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.RemoveStudent1.resources
+E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.BorrowBook.resources

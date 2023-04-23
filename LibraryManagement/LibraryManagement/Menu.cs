@@ -89,7 +89,7 @@ namespace LibraryManagement {
         }
 
         private void Button_BorrowBook_Click(object sender, EventArgs e) {
-            //Code to implement ...
+            OpenChildForm(new BorrowBook());
             HideSubMenus();
         }
 

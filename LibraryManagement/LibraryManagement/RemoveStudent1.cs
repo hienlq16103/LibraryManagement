@@ -20,6 +20,9 @@ namespace LibraryManagement {
             if (comboBox1.SelectedIndex == -1) {
                 return;
             }
+            if (comboBox1.SelectedValue == null) {
+                return;
+            }
             selectedValue = comboBox1.SelectedValue.ToString();
         }
 
@@ -30,8 +33,8 @@ namespace LibraryManagement {
         }
 
         private void Button_RemoveStudent_Click(object sender, EventArgs e) {
-            string deleteString = "DELETE FROM Student WHERE studentId = @studentId";   
-            if (selectedValue == "") {
+            string deleteString = "DELETE FROM Student WHERE studentId = @studentId";  
+            if (selectedValue == "" || comboBox1.SelectedValue == null) {
                 MessageBox.Show("Please choose a student", "Invalid information", MessageBoxButtons.OK);
                 return;
             }
@@ -43,6 +46,7 @@ namespace LibraryManagement {
                 conn.Close();
                 SetDropDownList();
             }
+            MessageBox.Show("Successfully removed a member", "Remove success", MessageBoxButtons.OK);
         }
 
         private void Button_ExitButton_Click(object sender, EventArgs e) {

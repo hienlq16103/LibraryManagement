@@ -23,6 +23,8 @@ namespace LibraryManagement {
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
             dataGridView1.DataSource = GetBookData();
         }
+
+        string id = "";
         DataTable GetBookData() {
             DataTable data = new DataTable();
             string id = Textbox_BookId.Text;
