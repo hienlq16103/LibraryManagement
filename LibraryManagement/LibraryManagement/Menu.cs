@@ -94,7 +94,7 @@ namespace LibraryManagement {
         }
 
         private void Button_ReturnBook_Click(object sender, EventArgs e) {
-            //Code to implement ...
+            OpenChildForm(new ReturnBook());
             HideSubMenus();
         }
 

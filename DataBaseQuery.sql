@@ -169,3 +169,20 @@ SET availability = 0
 WHERE bookId = '1000003' AND copyNumber= '2'
 
 SELECT * FROM CopiedBook
+
+
+SELECT B.bookId, title
+FROM Book AS B, Loan AS L
+WHERE B.bookId = L.bookId
+
+SELECT copyNumber 
+FROM Loan
+
+SELECT S.studentId, studentName
+FROM Student AS S, Loan AS L
+WHERE L.studentId = S.studentId
+
+SELECT copyNumber
+FROM Loan
+WHERE bookId = '1000003'
+
