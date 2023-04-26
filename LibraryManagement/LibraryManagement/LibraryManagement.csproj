@@ -46,6 +46,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAuthor.Designer.cs">
+      <DependentUpon>AddAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBook.Designer.cs">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCopiedBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCopiedBook.Designer.cs">
+      <DependentUpon>AddCopiedBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +96,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveAuthor.Designer.cs">
+      <DependentUpon>RemoveAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveBook.Designer.cs">
+      <DependentUpon>RemoveBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RemoveCopiedBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoveCopiedBook.Designer.cs">
+      <DependentUpon>RemoveCopiedBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="RemoveStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +162,15 @@
     <Compile Include="ViewStudent.Designer.cs">
       <DependentUpon>ViewStudent.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddAuthor.resx">
+      <DependentUpon>AddAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddBook.resx">
+      <DependentUpon>AddBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCopiedBook.resx">
+      <DependentUpon>AddCopiedBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </EmbeddedResource>
@@ -148,6 +193,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RemoveAuthor.resx">
+      <DependentUpon>RemoveAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveBook.resx">
+      <DependentUpon>RemoveBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoveCopiedBook.resx">
+      <DependentUpon>RemoveCopiedBook.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RemoveStudent.resx">
       <DependentUpon>RemoveStudent.cs</DependentUpon>
     </EmbeddedResource>

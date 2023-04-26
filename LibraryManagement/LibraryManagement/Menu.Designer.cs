@@ -28,6 +28,7 @@ namespace LibraryManagement {
             this.Panel_Loan = new System.Windows.Forms.Panel();
             this.Button_ReturnBook = new System.Windows.Forms.Button();
             this.Button_BorrowBook = new System.Windows.Forms.Button();
+            this.Button_ViewLoan = new System.Windows.Forms.Button();
             this.Button_Loan = new System.Windows.Forms.Button();
             this.Panel_Student = new System.Windows.Forms.Panel();
             this.Button_RemoveStudent = new System.Windows.Forms.Button();
@@ -43,9 +44,10 @@ namespace LibraryManagement {
             this.Button_ViewBook = new System.Windows.Forms.Button();
             this.Button_Book = new System.Windows.Forms.Button();
             this.Panel_Container = new System.Windows.Forms.Panel();
+            this.Button_AddAuthor = new System.Windows.Forms.Button();
+            this.Button_RemoveAuthor = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.Button_ViewLoan = new System.Windows.Forms.Button();
             this.Panel_SideMenu.SuspendLayout();
             this.Panel_Loan.SuspendLayout();
             this.Panel_Student.SuspendLayout();
@@ -78,7 +80,7 @@ namespace LibraryManagement {
             this.Panel_Loan.Controls.Add(this.Button_BorrowBook);
             this.Panel_Loan.Controls.Add(this.Button_ViewLoan);
             this.Panel_Loan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Loan.Location = new System.Drawing.Point(0, 530);
+            this.Panel_Loan.Location = new System.Drawing.Point(0, 609);
             this.Panel_Loan.Name = "Panel_Loan";
             this.Panel_Loan.Size = new System.Drawing.Size(229, 144);
             this.Panel_Loan.TabIndex = 2;
@@ -119,6 +121,24 @@ namespace LibraryManagement {
             this.Button_BorrowBook.UseVisualStyleBackColor = true;
             this.Button_BorrowBook.Click += new System.EventHandler(this.Button_BorrowBook_Click);
             // 
+            // Button_ViewLoan
+            // 
+            this.Button_ViewLoan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_ViewLoan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Button_ViewLoan.FlatAppearance.BorderSize = 0;
+            this.Button_ViewLoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_ViewLoan.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_ViewLoan.ForeColor = System.Drawing.Color.Snow;
+            this.Button_ViewLoan.Location = new System.Drawing.Point(0, 0);
+            this.Button_ViewLoan.Name = "Button_ViewLoan";
+            this.Button_ViewLoan.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.Button_ViewLoan.Size = new System.Drawing.Size(229, 40);
+            this.Button_ViewLoan.TabIndex = 10;
+            this.Button_ViewLoan.Text = "View Current Loan";
+            this.Button_ViewLoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_ViewLoan.UseVisualStyleBackColor = true;
+            this.Button_ViewLoan.Click += new System.EventHandler(this.Button_ViewLoan_Click_1);
+            // 
             // Button_Loan
             // 
             this.Button_Loan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(70)))), ((int)(((byte)(100)))));
@@ -128,7 +148,7 @@ namespace LibraryManagement {
             this.Button_Loan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Loan.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Loan.ForeColor = System.Drawing.Color.Snow;
-            this.Button_Loan.Location = new System.Drawing.Point(0, 490);
+            this.Button_Loan.Location = new System.Drawing.Point(0, 569);
             this.Button_Loan.Name = "Button_Loan";
             this.Button_Loan.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Button_Loan.Size = new System.Drawing.Size(229, 40);
@@ -145,7 +165,7 @@ namespace LibraryManagement {
             this.Panel_Student.Controls.Add(this.Button_AddStudent);
             this.Panel_Student.Controls.Add(this.Button_ViewStudent);
             this.Panel_Student.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_Student.Location = new System.Drawing.Point(0, 344);
+            this.Panel_Student.Location = new System.Drawing.Point(0, 423);
             this.Panel_Student.Name = "Panel_Student";
             this.Panel_Student.Size = new System.Drawing.Size(229, 146);
             this.Panel_Student.TabIndex = 1;
@@ -213,7 +233,7 @@ namespace LibraryManagement {
             this.Button_Student.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_Student.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Student.ForeColor = System.Drawing.Color.Snow;
-            this.Button_Student.Location = new System.Drawing.Point(0, 304);
+            this.Button_Student.Location = new System.Drawing.Point(0, 383);
             this.Button_Student.Name = "Button_Student";
             this.Button_Student.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.Button_Student.Size = new System.Drawing.Size(229, 40);
@@ -228,14 +248,16 @@ namespace LibraryManagement {
             this.Panel_Book.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(100)))), ((int)(((byte)(150)))));
             this.Panel_Book.Controls.Add(this.Button_RemoveCopiedBook);
             this.Panel_Book.Controls.Add(this.Button_RemoveBook);
+            this.Panel_Book.Controls.Add(this.Button_RemoveAuthor);
             this.Panel_Book.Controls.Add(this.Button_AddCopiedBook);
+            this.Panel_Book.Controls.Add(this.Button_AddAuthor);
             this.Panel_Book.Controls.Add(this.Button_AddBook);
             this.Panel_Book.Controls.Add(this.Button_ViewCopiedBook);
             this.Panel_Book.Controls.Add(this.Button_ViewBook);
             this.Panel_Book.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Book.Location = new System.Drawing.Point(0, 40);
             this.Panel_Book.Name = "Panel_Book";
-            this.Panel_Book.Size = new System.Drawing.Size(229, 264);
+            this.Panel_Book.Size = new System.Drawing.Size(229, 343);
             this.Panel_Book.TabIndex = 0;
             // 
             // Button_RemoveCopiedBook
@@ -246,7 +268,7 @@ namespace LibraryManagement {
             this.Button_RemoveCopiedBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_RemoveCopiedBook.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_RemoveCopiedBook.ForeColor = System.Drawing.Color.Snow;
-            this.Button_RemoveCopiedBook.Location = new System.Drawing.Point(0, 200);
+            this.Button_RemoveCopiedBook.Location = new System.Drawing.Point(0, 280);
             this.Button_RemoveCopiedBook.Name = "Button_RemoveCopiedBook";
             this.Button_RemoveCopiedBook.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.Button_RemoveCopiedBook.Size = new System.Drawing.Size(229, 40);
@@ -264,7 +286,7 @@ namespace LibraryManagement {
             this.Button_RemoveBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_RemoveBook.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_RemoveBook.ForeColor = System.Drawing.Color.Snow;
-            this.Button_RemoveBook.Location = new System.Drawing.Point(0, 160);
+            this.Button_RemoveBook.Location = new System.Drawing.Point(0, 240);
             this.Button_RemoveBook.Name = "Button_RemoveBook";
             this.Button_RemoveBook.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.Button_RemoveBook.Size = new System.Drawing.Size(229, 40);
@@ -282,7 +304,7 @@ namespace LibraryManagement {
             this.Button_AddCopiedBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_AddCopiedBook.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_AddCopiedBook.ForeColor = System.Drawing.Color.Snow;
-            this.Button_AddCopiedBook.Location = new System.Drawing.Point(0, 120);
+            this.Button_AddCopiedBook.Location = new System.Drawing.Point(0, 160);
             this.Button_AddCopiedBook.Name = "Button_AddCopiedBook";
             this.Button_AddCopiedBook.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.Button_AddCopiedBook.Size = new System.Drawing.Size(229, 40);
@@ -375,6 +397,42 @@ namespace LibraryManagement {
             this.Panel_Container.Size = new System.Drawing.Size(700, 633);
             this.Panel_Container.TabIndex = 1;
             // 
+            // Button_AddAuthor
+            // 
+            this.Button_AddAuthor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_AddAuthor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Button_AddAuthor.FlatAppearance.BorderSize = 0;
+            this.Button_AddAuthor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_AddAuthor.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_AddAuthor.ForeColor = System.Drawing.Color.Snow;
+            this.Button_AddAuthor.Location = new System.Drawing.Point(0, 120);
+            this.Button_AddAuthor.Name = "Button_AddAuthor";
+            this.Button_AddAuthor.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.Button_AddAuthor.Size = new System.Drawing.Size(229, 40);
+            this.Button_AddAuthor.TabIndex = 10;
+            this.Button_AddAuthor.Text = "Add Author";
+            this.Button_AddAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_AddAuthor.UseVisualStyleBackColor = true;
+            this.Button_AddAuthor.Click += new System.EventHandler(this.Button_AddAuthor_Click);
+            // 
+            // Button_RemoveAuthor
+            // 
+            this.Button_RemoveAuthor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_RemoveAuthor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Button_RemoveAuthor.FlatAppearance.BorderSize = 0;
+            this.Button_RemoveAuthor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_RemoveAuthor.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_RemoveAuthor.ForeColor = System.Drawing.Color.Snow;
+            this.Button_RemoveAuthor.Location = new System.Drawing.Point(0, 200);
+            this.Button_RemoveAuthor.Name = "Button_RemoveAuthor";
+            this.Button_RemoveAuthor.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.Button_RemoveAuthor.Size = new System.Drawing.Size(229, 40);
+            this.Button_RemoveAuthor.TabIndex = 11;
+            this.Button_RemoveAuthor.Text = "Remove Author";
+            this.Button_RemoveAuthor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Button_RemoveAuthor.UseVisualStyleBackColor = true;
+            this.Button_RemoveAuthor.Click += new System.EventHandler(this.Button_RemoveAuthor_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::LibraryManagement.Properties.Resources.LibraryIcon;
@@ -395,7 +453,7 @@ namespace LibraryManagement {
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(0, 674);
+            this.button1.Location = new System.Drawing.Point(0, 753);
             this.button1.Name = "button1";
             this.button1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button1.Size = new System.Drawing.Size(229, 52);
@@ -404,24 +462,6 @@ namespace LibraryManagement {
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Button_ViewLoan
-            // 
-            this.Button_ViewLoan.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_ViewLoan.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Button_ViewLoan.FlatAppearance.BorderSize = 0;
-            this.Button_ViewLoan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_ViewLoan.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_ViewLoan.ForeColor = System.Drawing.Color.Snow;
-            this.Button_ViewLoan.Location = new System.Drawing.Point(0, 0);
-            this.Button_ViewLoan.Name = "Button_ViewLoan";
-            this.Button_ViewLoan.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.Button_ViewLoan.Size = new System.Drawing.Size(229, 40);
-            this.Button_ViewLoan.TabIndex = 10;
-            this.Button_ViewLoan.Text = "View Current Loan";
-            this.Button_ViewLoan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Button_ViewLoan.UseVisualStyleBackColor = true;
-            this.Button_ViewLoan.Click += new System.EventHandler(this.Button_ViewLoan_Click_1);
             // 
             // Menu
             // 
@@ -470,5 +510,7 @@ namespace LibraryManagement {
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Button_ViewLoan;
+        private System.Windows.Forms.Button Button_AddAuthor;
+        private System.Windows.Forms.Button Button_RemoveAuthor;
     }
 }

@@ -168,7 +168,7 @@ UPDATE CopiedBook
 SET availability = 0
 WHERE bookId = '1000003' AND copyNumber= '2'
 
-SELECT * FROM CopiedBook
+SELECT * FROM Book
 
 
 SELECT B.bookId, title
@@ -186,3 +186,12 @@ SELECT copyNumber
 FROM Loan
 WHERE bookId = '1000003'
 
+SELECT B.bookId, title, authorName, publisher, yearOfPublication
+FROM Book AS B
+LEFT JOIN WrittenBy AS W
+ON B.bookId = W.bookId
+WHERE B.bookId = '1000007'
+
+SELECT DISTINCT B.bookId, title
+FROM Book AS B, WrittenBy AS W
+WHERE B.bookId = W.bookId

@@ -54,22 +54,22 @@ namespace LibraryManagement {
         }
 
         private void Button_AddBook_Click(object sender, EventArgs e) {
-            //Code to implement ...
+            OpenChildForm(new AddBook());
             HideSubMenus();
         }
 
         private void Button_AddCopiedBook_Click(object sender, EventArgs e) {
-            //Code to implement ...
+            OpenChildForm(new AddCopiedBook());
             HideSubMenus();
         }
 
         private void Button_RemoveBook_Click(object sender, EventArgs e) {
-            //Code to implement ...
+            OpenChildForm(new RemoveBook());
             HideSubMenus();
         }
 
         private void Button_RemoveCopiedBook_Click(object sender, EventArgs e) {
-            //Code to implement ...
+            OpenChildForm(new RemoveCopiedBook());
             HideSubMenus();
         }
 
@@ -149,6 +149,16 @@ namespace LibraryManagement {
 
         private void Button_ViewLoan_Click_1(object sender, EventArgs e) {
             OpenChildForm(new ViewCurrentLoan());
+            HideSubMenus();
+        }
+
+        private void Button_AddAuthor_Click(object sender, EventArgs e) {
+            OpenChildForm(new AddAuthor());
+            HideSubMenus();
+        }
+
+        private void Button_RemoveAuthor_Click(object sender, EventArgs e) {
+            OpenChildForm(new RemoveAuthor());
             HideSubMenus();
         }
     }

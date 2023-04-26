@@ -29,12 +29,14 @@ namespace LibraryManagement {
             DataTable data = new DataTable();
             string id = Textbox_BookId.Text;
             string query = "SELECT B.bookId, title, authorName, publisher, yearOfPublication"
-                + " FROM Book AS B, WrittenBy AS W WHERE B.bookId = W.bookId";
+                + " FROM Book AS B" +
+                " LEFT JOIN WrittenBy AS W" +
+                " ON B.bookId = W.bookId";
             using (SqlConnection connection = new SqlConnection(ConnectionString.connectionString)) {
                 connection.Open();
                 SqlDataAdapter adapter;
                 if (id.Length != 0) {
-                    query += " AND B.bookId = '" + id + "'";
+                    query += " WHERE B.bookId = '" + id + "'";
                 }
                 adapter = new SqlDataAdapter(query, connection);
                 adapter.Fill(data);

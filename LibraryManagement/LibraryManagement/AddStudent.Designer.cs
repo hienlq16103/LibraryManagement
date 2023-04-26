@@ -97,6 +97,7 @@ namespace LibraryManagement {
             this.Textbox_StudentId.Name = "Textbox_StudentId";
             this.Textbox_StudentId.Size = new System.Drawing.Size(405, 25);
             this.Textbox_StudentId.TabIndex = 5;
+            this.Textbox_StudentId.TextChanged += new System.EventHandler(this.Textbox_StudentId_TextChanged);
             // 
             // panel4
             // 
