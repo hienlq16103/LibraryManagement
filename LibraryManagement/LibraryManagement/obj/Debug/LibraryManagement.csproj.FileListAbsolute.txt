@@ -25,3 +25,7 @@ E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManage
 E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.RemoveAuthor.resources
 E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.RemoveBook.resources
 E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.RemoveCopiedBook.resources
+E:\LibraryManagement\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe.manifest
+E:\LibraryManagement\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.application
+E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.exe.manifest
+E:\LibraryManagement\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.application
