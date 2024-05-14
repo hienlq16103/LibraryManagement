@@ -6,7 +6,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 ## Showcase
 
-### Authentication
+### 1.Authentication
 
 <details>
     <summary>Images (click to expand!)</summary>
@@ -16,7 +16,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-### Menu
+### 2.Menu
 
 <details>
     <summary>Images (click to expand!)</summary>
@@ -28,7 +28,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-### Book
+### 3.Book
 
 #### View Book
 
@@ -103,7 +103,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-### Student
+### 4.Student
 
 #### View Student
 
@@ -132,7 +132,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-### Loan
+### 5.Loan
 
 #### View Current Loan
 
