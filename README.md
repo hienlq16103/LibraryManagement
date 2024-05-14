@@ -15,3 +15,6 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
     ![Sign Up](/Images/SignUp.png "Sign up")
 
 </details>
+
+![Login](/Images/Login.png "Login")
+![Sign Up](/Images/SignUp.png "Sign up")
