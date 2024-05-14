@@ -11,7 +11,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 <details>
     <summary>Images (click to expand!)</summary>
 
-    ![Login](Images/Login.png "Login")
-    ![Sign Up](Images/SignUp.png "Sign up")
+    ![Login](/Images/Login.png "Login")
+    ![Sign Up](/Images/SignUp.png "Sign up")
 
 </details>
