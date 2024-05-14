@@ -21,16 +21,16 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 <details>
     <summary>Images (click to expand!)</summary>
 
-![Menu 0](/Images/Menu0 "Menu 0")
-![Menu 1](/Images/Menu1 "Menu 1")
-![Menu 2](/Images/Menu2 "Menu 2")
-![Menu 3](/Images/Menu3 "Menu 3")
+![Menu 0](/Images/Menu0.png "Menu 0")
+![Menu 1](/Images/Menu1.png "Menu 1")
+![Menu 2](/Images/Menu2.png "Menu 2")
+![Menu 3](/Images/Menu3.png "Menu 3")
 
 </details>
 
 ### Book
 
-* View Book
+#### View Book
 
 <details>
     <summary>Images (click to expand)</summary>
@@ -40,7 +40,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-* View Copied Book
+#### View Copied Book
 
 <details>
     <summary>Images (click to expand)</summary>
@@ -49,7 +49,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-* Add Book
+#### Add Book
 
 <details>
     <summary>Images (click to expand)</summary>
@@ -58,7 +58,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-* Add Author
+#### Add Author
 
 <details>
     <summary>Images (click to expand)</summary>
@@ -67,7 +67,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-* Add Copied Book
+#### Add Copied Book
 
 <details>
     <summary>Images (click to expand)</summary>
@@ -76,7 +76,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-* Remove Author
+#### Remove Author
 
 <details>
     <summary>Images (click to expand)</summary>
@@ -85,7 +85,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-* Remove Book
+#### Remove Book
 
 <details>
     <summary>Images (click to expand)</summary>
@@ -94,7 +94,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-* Remove Copied Book
+#### Remove Copied Book
 
 <details>
     <summary>Images (click to expand)</summary>
@@ -105,7 +105,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 ### Student
 
-* View Student
+#### View Student
 
 <details>
     <summary>Images (click to expand)</summary>
@@ -114,7 +114,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-* Add Student
+#### Add Student
 
 <details>
     <summary>Images (click to expand)</summary>
@@ -123,7 +123,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-* Remove Student
+#### Remove Student
 
 <details>
     <summary>Images (click to expand)</summary>
@@ -134,7 +134,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 ### Loan
 
-* View Current Loan
+#### View Current Loan
 
 <details>
     <summary>Images (click to expand)</summary>
@@ -144,7 +144,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-* Borrow Book
+#### Borrow Book
 
 <details>
     <summary>Images (click to expand)</summary>
@@ -153,7 +153,7 @@ The app is built on Microsoft Windows Form .NET Framework with the main programm
 
 </details>
 
-* Return Book
+#### Return Book
 
 <details>
     <summary>Images (click to expand)</summary>
